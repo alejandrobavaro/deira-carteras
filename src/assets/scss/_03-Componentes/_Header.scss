@@ -2,19 +2,19 @@
 html, body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; // Para manejar correctamente los bordes y paddings
+  box-sizing: border-box; 
 }
 
 /* Estilos del header */
 .header {
   // background-color: rgba(0, 0, 0, 0.719);
   // background-image: url(../../../../img/00-fondos/IMG-20240401-WA0023.jpeg);
-  background-color: white;
+  background-color: transparent;
   padding: 0;
   margin: 0;
   width: 100%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5); // Mantener color sin variables
-  box-sizing: border-box; // Asegura que los bordes se manejen correctamente
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5); 
+  box-sizing: border-box; 
   
 
   .logo-container {
@@ -36,7 +36,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0px; // Ajusta el padding interno de la barra de navegación
+    padding: 0 0px; 
   }
 
   .navbar-nav {
@@ -50,11 +50,11 @@ html, body {
 
     .nav-link {
     font-weight: bolder;
-      color: #000000; // Texto blanco
+      color: #000000; 
       transition: color 0.3s ease;
 
       &:hover {
-        color: #464646; // Color primario sin variables
+        color: #464646; 
       }
     }
   }
@@ -70,7 +70,7 @@ html, body {
         transition: color 0.3s ease;
 
       &:hover {
-        color: #7a7a7a; // Color de acento
+        color: #7a7a7a; 
       }
     }
   }
@@ -87,7 +87,7 @@ html, body {
   .auth-welcome-container {
     display: flex;
     align-items: center;
-    color: #b1b1b1; // Blanco
+    color: #b1b1b1; 
     font-size: large;
 
     }

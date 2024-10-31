@@ -1,17 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/SesionAuthContext";
 import { BsFillPersonPlusFill, BsBoxArrowRight, BsList } from "react-icons/bs";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "../assets/scss/_03-Componentes/_Header.scss";
 
-const Header = ({ isDarkMode, toggleDarkMode }) => {
+const Header = () => {
   const { state, dispatch } = useAuth();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    document.body.classList.toggle("dark-mode", isDarkMode);
-  }, [isDarkMode]);
 
   const handleToggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
@@ -44,18 +40,17 @@ const Header = ({ isDarkMode, toggleDarkMode }) => {
                 INICIO
               </Nav.Link>
 
-              <Nav.Link
+              {/* <Nav.Link
                 as={Link}
                 to="/personaliza"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 PERSONALIZA
-              </Nav.Link>
+              </Nav.Link>  */}
 
-              {/* Otros enlaces comentados */}
             </Nav>
 
-            <Nav.Item className="auth-buttons-container">
+            {/* <Nav.Item className="auth-buttons-container">
               {state.isAuthenticated ? (
                 <div className="auth-welcome-container">
                   <div className="auth-welcome">
@@ -84,7 +79,7 @@ const Header = ({ isDarkMode, toggleDarkMode }) => {
                   ></Link>
                 </>
               )}
-            </Nav.Item>
+            </Nav.Item> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

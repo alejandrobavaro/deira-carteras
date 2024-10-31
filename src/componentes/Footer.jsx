@@ -17,7 +17,7 @@ function Footer() {
             <a href="#">
               <img
                 className="footer-logo"
-                src="../../img/02-logos/logoheader2.png"
+                src="../../img/02-logos/logodeiracarteras.png"
                 alt="Logo Izquierda"
               />
             </a>
@@ -26,28 +26,28 @@ function Footer() {
           <div className="footer-column">
             <div className="social-links">
               <a
-                href="https://www.instagram.com"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="bi bi-instagram" /> Instagram
               </a>
               <a
-                href="https://www.youtube.com"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="bi bi-youtube" /> Youtube
               </a>
               <a
-                href="https://www.facebook.com"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="bi bi-facebook" /> Facebook
               </a>
               <a
-                href="https://www.twitter.com"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -60,7 +60,7 @@ function Footer() {
             <a href="#">
               <img
                 className="footer-logo"
-               src="../../img/02-logos/logoheader1.png"
+               src="../../img/02-logos/logodeiracarteras.png"
                 alt="Logo Derecha"
               />
             </a>

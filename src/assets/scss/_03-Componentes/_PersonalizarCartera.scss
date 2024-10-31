@@ -2,19 +2,19 @@
   padding: 10px;
   text-align: center;
   color: #000000;
-  // box-shadow: 0 2px 80px rgba(255, 255, 255, 0.637);
-  border-radius: 20px;
-  background-color: transparent;
+  // box-shadow: 0 2px 80px rgba(255, 0, 0, 0.637);
+  // border-radius: 20px;
+
+  // background-color: transparent;
 
   .producto-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    border-radius: 20px;
+      border-radius: 20px;
     overflow: hidden;
 
     .producto-preview {
-      background-image: url(/img/13-imagenes-personaliza3/deira-cartera-bombon/00-boceto-inicial-final-1.png);
+      background-image: url(/img/10-personaliza-tu-cartera/deira-cartera-bombon/00-boceto-inicial-final-1.png);
       background-color: #ffffff2c;
       background-size: contain; // Mantener la imagen como está
       background-attachment: local;
@@ -22,16 +22,14 @@
       // border: 1px solid #ff000059;
       // box-shadow: 0 0px 100px rgb(255, 255, 255);
       position: relative;
-      margin: 10px;
-      width: 100%;
-      height: auto;
-      overflow: hidden;
+      margin: 0px;
+      margin-bottom: 10px;
+      width: 100%; // Ajusta según sea necesario
+      height: 600px; // Ajusta según sea necesario
+      overflow: hidden; // Evita que las capas se salgan del contenedor
       transition: transform 0.3s ease;
 
-      &:hover {
-        // transform: scale(1.2);
-        // box-shadow: 0 2px 60px rgba(255, 255, 255, 0.479);
-      }
+  
 
       img {
         position: absolute;
@@ -53,14 +51,15 @@
     }
 
     .tituloopciones {
-      margin: 5px;
-      font-size: large;
+      margin: 15px;
+      font-size: medium;
     }
 
     .personalizacion-capas {
       display: flex;
       flex-direction: column;
       align-items: center;
+     
 
       .options-container {
         display: flex; // Cambia la visualización a flex
@@ -69,8 +68,8 @@
 
         .option-button {
           margin: 0 7px; // Espaciado horizontal entre botones
-          background-image: url(/img/13-imagenes-personaliza3/deira-cartera-bombon/00-boceto-inicial-final-3.png);
-          background-color: #ffffff1c;
+          background-image: url(/img/10-personaliza-tu-cartera/deira-cartera-bombon/00-boceto-inicial-final-1.png);
+          // background-color: #ffffff1c;
           background-size: contain; // Mantener la imagen como está
           border-radius: 20px;
           cursor: pointer;
@@ -78,18 +77,18 @@
           transition: transform 0.3s ease;
 
           &:hover {
-            transform: scale(2);
-            box-shadow: 0 0px 10px rgba(0, 0, 0, 0.479);
+            transform: scale(1.5);
+            // box-shadow: 0 0px 10px rgba(0, 0, 0, 0.479);
           }
 
           &.selected {
-            border: 2px solid #ff0000d2;
-            box-shadow: 0 2px 60px rgba(255, 0, 0, 0.767);
+            // border: 1px solid #000000;
+            box-shadow: 0 2px 20px rgb(21, 0, 71);
           }
 
           .option-img {
             width: 100%; // Ajusta el tamaño según sea necesario
-            height: 65px; // Ajusta el tamaño según sea necesario
+            height: 80px; // Ajusta el tamaño según sea necesario
           }
         }
       }
@@ -99,17 +98,18 @@
 
         .guardar-btn,
         .previsualizar-btn {
-          background-color: #0000003d;
+          background-color: #000000a8;
           font-size: large;
-          color: #000000;
+          color: #ffffff;
           border: none;
           padding: 0px 15px;
           border-radius: 20px;
           cursor: pointer;
           margin-right: 10px;
+          transition: transform 0.5s ease;
 
           &:hover {
-            background-color: #ff00009a;
+            background-color: #000000c4;
           }
         }
       }
@@ -141,5 +141,22 @@
     .tituloopciones {
       font-size: medium; // Reducir el tamaño de la fuente
     }
+  }
+}
+
+
+.option-wrapper {
+  display: flex;
+  flex-direction: column; // Apila el botón y el nombre verticalmente
+  align-items: center; // Centra el contenido
+  padding: 0px;
+
+
+  .option-name {
+    margin-top: 5px; // Espaciado entre el botón y el nombre
+    margin-bottom: 10px; // Espaciado entre el botón y el nombre
+    padding: 0px;
+    font-size: xx-small; // Ajusta el tamaño de la fuente como desees
+    color: #000000; // Cambia el color si es necesario
   }
 }

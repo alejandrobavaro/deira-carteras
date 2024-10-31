@@ -3,15 +3,15 @@
 /* Estilos generales del Footer */
 .footer-container {
   display: grid;
-  grid-template-rows: auto auto; /* Define dos filas: una para el contenido y otra para el footer */
+  grid-template-rows: auto auto; 
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
-  background-color: rgba(250, 159, 22, 0.26);
+  background-color: transparent;
   // background-image: url(../_01-General/../../../../img/00-fondos/fondo4a.jpg);
   border-radius: 20px;
-  box-shadow: 0 0px 200px rgba(255, 145, 0, 0.63);
+  // box-shadow: 0 0px 200px rgba(255, 145, 0, 0.63);
   text-align: center;
 }
 
@@ -34,7 +34,7 @@
   align-items: center;
 
   .footer-logo {
-    width: 200px;
+    width: 80px;
     transition: transform 0.3s ease;
 
     &:hover {
@@ -47,16 +47,16 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-size: medium;
+  font-size: small;
   color: rgba(111, 0, 255, 0.63);
 
   a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     transition: color 0.3s ease;
 
     &:hover {
-      color: #bee7ff;
+      color: #474747;
     }
   }
 
@@ -71,21 +71,21 @@
   text-align: center;
   margin-top: 20px;
   padding: 0;
-  font-family: 'Cinzel Decorative', serif; /* Aplica la tipografía importada */
+  font-family: 'Cinzel Decorative', serif; 
 
 }
 
 .tituloImportanteFooter4 {
-  font-size: 1.2em; /* Ajusta el tamaño del texto para que destaque */
+  font-size: small; 
   
   a {
     color: inherit;
     text-decoration: none;
     cursor: pointer;
-    font-size: medium;
+    font-size: x-small;
     
     &:hover {
-      color: #e6fbff; /* Cambia el color en hover */
+      color: #4b4b4b; 
     }
   }
 }

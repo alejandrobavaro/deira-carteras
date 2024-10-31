@@ -63,6 +63,7 @@ const PersonalizarCartera = () => {
       <h1>Personaliza tu Cartera</h1>
       <div className="producto-grid">
         <div className="producto-preview">
+          
           {/* Vista previa de la cartera con capas */}
           {Object.keys(seleccion).map((tipo) => (
             seleccion[tipo] && (
@@ -82,13 +83,15 @@ const PersonalizarCartera = () => {
               <h5 className="tituloopciones">{productoSeleccionado[tipo].titulo}</h5>
               <div className="options-container">
                 {productoSeleccionado[tipo].opciones.map((opcion) => (
-                  <button 
-                    key={opcion.nombre}
-                    className={`option-button ${seleccion[tipo] === opcion.nombre ? 'selected' : ''}`}
-                    onClick={() => handleSeleccionChange(tipo, opcion.nombre)}
-                  >
-                    <img src={opcion.imagen} alt={opcion.nombre} className="option-img" />
-                  </button>
+                  <div key={opcion.nombre} className="option-wrapper">
+                    <button 
+                      className={`option-button ${seleccion[tipo] === opcion.nombre ? 'selected' : ''}`}
+                      onClick={() => handleSeleccionChange(tipo, opcion.nombre)}
+                    >
+                      <img src={opcion.imagen} alt={opcion.nombre} className="option-img" />
+                    </button>
+                    <span className="option-name">{opcion.nombre}</span>
+                  </div>
                 ))}
               </div>
             </div>

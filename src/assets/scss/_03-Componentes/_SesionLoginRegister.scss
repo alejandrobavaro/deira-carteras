@@ -79,7 +79,7 @@
       button {
         width: 100%;
         padding: 0.75rem;
-        background-color: #ffffff62; // Neón rosa
+        background-color: #ffffff62; 
         border: none;
         border-radius: 5px;
         color: #ffffff;
@@ -115,7 +115,7 @@
     }
 
     @media (min-width: 768px) {
-      flex-direction: row; // Volver a la dirección de fila en pantallas grandes
+      flex-direction: row; 
 
       .auth-image {
         margin: 20px;
@@ -139,7 +139,7 @@
     height: 60px;
     border: 8px solid rgba(30, 4, 78, 0.2);
     border-radius: 50%;
-    border-top: 8px solid #9900ff; // Neón rosa
+    border-top: 8px solid #9900ff; 
     animation: spin 1.5s linear infinite;
   }
 

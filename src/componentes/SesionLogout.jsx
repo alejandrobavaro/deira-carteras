@@ -11,8 +11,8 @@ const SesionLogout = () => {
   React.useEffect(() => {
     dispatch({ type: 'LOGOUT' });
     setTimeout(() => {
-      navigate('/login'); // Cambiado para redirigir a la página de inicio de sesión
-    }, 2000); // Simula un retraso
+      navigate('/login'); 
+    }, 2000); 
   }, [dispatch, navigate]);
 
   return <LoadingSpinner />;
