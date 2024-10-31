@@ -21,6 +21,9 @@ import Footer from "./componentes/Footer";
 import ContactoLogoRedes from "./componentes/ContactoLogoRedes";
 import ContactoFormularioSlider from "./componentes/ContactoFormularioSlider";
 
+//-----------------------------------------------//
+import PersonalizarCartera from "./componentes/PersonalizarCartera";
+
 //-----------LOGIN-LOGOUT-REGISTRO-----------------//
 import SesionRegister from "./componentes/SesionRegistrate";
 import SesionLogout from "./componentes/SesionLogout";
@@ -90,6 +93,10 @@ function App() {
          
               <Route path="/galeria" element={<GaleriaFotografias />} />
            
+              {/* Ruta de Personalización */}
+              <Route path="/personaliza" element={<PersonalizarCartera />} />
+              <Route path="/personaliza/:productoId" element={<PersonalizarCartera />} />
+
               {/* Rutas para la tienda */}
               <Route path="/tienda" element={<Tienda 
                 setCart={setProductCart} 

@@ -83,7 +83,7 @@ body {
 p {
   font-size: medium;
   padding: 20px;
-  color: #dcdcdc;
+  color: #000000;
 
   body.dark-mode & {
     color: #fff4c7; // Amarillo patito
@@ -108,20 +108,20 @@ h6 {
 h1 {
   font-family: 'Minion Pro', serif; // Aplica Minion Pro
   font-size: xx-large;
-  color: #fff4c8; // Amarillo patito
+  color: #000000; // Amarillo patito
 }
 
 h3, h2 {
   font-family: 'Minion Pro', serif; // Aplica Minion Pro
   font-size: large;
-  color: #a8bddb; // Amarillo patito
+  color: #000000; // Amarillo patito
 }
 
 
 h4,
 h5 {
   body.dark-mode & {
-    color: #dff3ff; // Amarillo patito
+    color: #000000; // Amarillo patito
   }
 
   body.light-mode & {
@@ -131,7 +131,7 @@ h5 {
 
 h6 {
   font-size: xx-small;
-  color: rgb(252, 252, 252);
+  color: rgb(0, 0, 0);
 }
 
 /*--------------Estilos para Listas--------------*/

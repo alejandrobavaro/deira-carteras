@@ -76,7 +76,7 @@ function MainContent() {
       />{" "}
       {/* Contenedor para mostrar las notificaciones de toast */}
       {/* Sección de Ofertas */}
-      <section className="offersSection">
+      {/* <section className="offersSection">
         <div className="offersGrid">
           <div className="offerItem">
             <div className="offerContent">
@@ -99,7 +99,7 @@ function MainContent() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="textSection">
         <div className="textContainer">
@@ -145,7 +145,7 @@ function MainContent() {
       </section>
 
       {/* Sección de Banners 1*/}
-      <section className="bannerSection">
+      {/* <section className="bannerSection">
   <Slider {...settings}>
     {images1.map((image, index) => (
       <div key={index} className="carouselItem">
@@ -153,11 +153,11 @@ function MainContent() {
       </div>
     ))}
   </Slider>
-</section>
+</section> */}
 
 
       {/* Sección de Nuevos Productos */}
-      <section className="newArrivalsSection">
+      {/* <section className="newArrivalsSection">
         <div className="productsGrid">
           <div className="productItem">
             <h3 className="productTitle">Distinta</h3>
@@ -193,11 +193,11 @@ function MainContent() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
             {/* Sección de Banners 2*/}
-            <section className="bannerSection">
+            {/* <section className="bannerSection">
   <Slider {...settings}>
     {images2.map((image, index) => (
       <div key={index} className="carouselItem">
@@ -205,11 +205,11 @@ function MainContent() {
       </div>
     ))}
   </Slider>
-</section>
+</section> */}
 
 
       {/* Sección de Suscripción */}
-      <section className="subscriptionSection">
+      {/* <section className="subscriptionSection">
         <img
           src="./img/03-img-cuadradas/galeria-14.jpg"
           alt=""
@@ -219,7 +219,7 @@ function MainContent() {
         <button className="subscribeButton" onClick={handleSubscribeClick}>
           Suscribirse a Novedades
         </button>
-      </section>
+      </section> */}
       {/* Formulario de Suscripción */}
       {showSubscriptionForm && (
         <div className="subscriptionFormOverlay">

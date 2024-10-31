@@ -2,17 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import { AuthProvider } from './context/SesionAuthContext';
-import { AplicaPersonaliza3CapasPersonalizacionProvider } from './context/AplicaPersonaliza3CapasPersonalizacionContext'; 
+import { PersonalizarCarteraProvider } from './context/PersonalizarCarteraContext'; 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProvider>
-      <AplicaPersonaliza3CapasPersonalizacionProvider> 
+      <PersonalizarCarteraProvider> 
 
         <App />
       
-      </AplicaPersonaliza3CapasPersonalizacionProvider>
+      </PersonalizarCarteraProvider>
     </AuthProvider>
   </React.StrictMode>
 );

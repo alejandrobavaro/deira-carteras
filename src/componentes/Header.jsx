@@ -46,60 +46,13 @@ const Header = ({ isDarkMode, toggleDarkMode }) => {
 
               <Nav.Link
                 as={Link}
-                to="/sobrenosotros"
+                to="/personaliza"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                SOBRE NOSOTOROS
+                PERSONALIZA
               </Nav.Link>
 
-              <Nav.Link
-                as={Link}
-                to="/blog"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                BLOG
-              </Nav.Link>
-
-              <Nav.Link
-                as={Link}
-                to="/inspirate"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                INSPIRATE
-              </Nav.Link>
-
-              <Nav.Link
-                as={Link}
-                to="/guiagratuita"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                GUIA GRATUITA
-              </Nav.Link>
-
-              {/* 
-              <Nav.Link
-                as={Link}
-                to="/galeria"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                GALERIA
-              </Nav.Link> */}
-
-              {/* <Nav.Link
-                as={Link}
-                to="/tienda"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                TIENDA
-              </Nav.Link> */}
-
-              {/* <Nav.Link
-                as={Link}
-                to="/contacto"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                CONTACTO
-              </Nav.Link> */}
+              {/* Otros enlaces comentados */}
             </Nav>
 
             <Nav.Item className="auth-buttons-container">
