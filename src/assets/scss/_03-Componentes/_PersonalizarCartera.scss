@@ -29,9 +29,9 @@
         .producto-preview {
           background-image: url(/img/10-personaliza-tu-cartera/deira-cartera-bombon/00-boceto-inicial-final-1.png);
           background-size: contain;
-          background-repeat: no-repeat; // Evita que la imagen se repita
+          background-repeat: no-repeat; 
           background-attachment: local;
-          border-radius: 30px;
+          border-radius: 100%;
           position: relative;
           margin: 0px;
           margin-bottom: 0; // Eliminado margen inferior
@@ -127,37 +127,42 @@
     @media (max-width: 768px) {
       .producto-grid {
         grid-template-columns: 1fr; // Cambia a una columna para tabletas
-
+    
         .producto-preview {
-          height: 400px; // Ajustar la altura en tabletas
-          background-size: cover; // Cambiar a cover si es necesario
-          margin-bottom: 0; // Eliminado margen inferior
+          height: auto; // Ajustar la altura en tabletas
+              margin-bottom: 0px; // Ajusta según sea necesario
         }
       }
+    
+      .personalizacion-capas {
+        margin-top: 0px; // Ajusta el margen positivo para evitar valores negativos
+        padding: 0px; // Agrega padding si es necesario para espaciar
+      }
     }
-
-    @media (max-width: 401px) {
-      padding: 5px;
-
+    
+    @media (max-width: 410px) {
+      padding: 0px;
+    
       h1 {
         font-size: 1.2em;
       }
-
+    
       .producto-preview {
-        height: 300px; // Ajustar la altura en móviles
+        height: auto; // Ajustar la altura en móviles
         margin-bottom: 0; // Eliminado margen inferior
       }
-
+    
       .personalizacion-capas {
-        margin-top: -300px; // Reduce el margen superior de la sección de botones
+        margin-top: 0px; // Un margen positivo
+        padding: 0px; // Espaciado interno adicional
       }
-
+    
       .tituloopciones {
         font-size: medium; // Reducir el tamaño de la fuente
         margin-top: 0; // Eliminado margen superior si es necesario
       }
     }
-  }
+  }    
 
   .option-wrapper {
     display: flex;

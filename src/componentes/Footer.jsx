@@ -3,7 +3,8 @@ import "../assets/scss/_03-Componentes/_Footer.scss";
 
 // Importa la tipografía desde Google Fonts
 const fontImport = document.createElement("link");
-fontImport.href = "https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap";
+fontImport.href =
+  "https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap";
 fontImport.rel = "stylesheet";
 document.head.appendChild(fontImport);
 
@@ -14,7 +15,7 @@ function Footer() {
       <div className="footer-grid">
         <div className="footer-content">
           <div className="footer-column">
-            <a href="https://www.deira.com.ar/">
+            <a href="https://www.deira.com.ar/" target="_blank">
               <img
                 className="footer-logo"
                 src="../../img/02-logos/logodeiracarteras.png"
@@ -57,17 +58,17 @@ function Footer() {
           </div>
 
           <div className="footer-column">
-            <a href="https://www.deira.com.ar/">
+            <a href="https://www.deira.com.ar/" target="_blank">
               <img
                 className="footer-logo"
-               src="../../img/02-logos/logodeiracarteras.png"
+                src="../../img/02-logos/logodeiracarteras.png"
                 alt="Logo Derecha"
               />
             </a>
           </div>
         </div>
       </div>
-<hr />
+      <hr />
 
       {/* Segunda fila: Sección de derechos de autor */}
       <div className="trademarkFooter">
@@ -78,7 +79,8 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="bi bi-brilliance" /> - Gondra World Dev - <i className="bi bi-brilliance" />
+              <i className="bi bi-brilliance" /> - Gondra World Dev -{" "}
+              <i className="bi bi-brilliance" />
             </a>
           </h3>
         </div>

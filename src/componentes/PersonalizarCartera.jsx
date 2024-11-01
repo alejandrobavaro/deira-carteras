@@ -116,6 +116,8 @@ const PersonalizarCartera = () => {
                   ))} 
                 </div>
               </div>
+
+              
             ))}
             <div className="personalizar-acciones">
               <button className="guardar-btn" onClick={handleSaveDesign}>Guardar Diseño</button>
