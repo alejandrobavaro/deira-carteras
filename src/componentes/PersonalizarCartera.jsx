@@ -62,22 +62,23 @@ const PersonalizarCartera = () => {
     <div className="personaliza-producto-container">
       <h1>Personaliza tu Cartera</h1>
       <div className="producto-grid">
-        <div className="producto-preview">
-          
-          {/* Vista previa de la cartera con capas */}
-          {Object.keys(seleccion).map((tipo) => (
-            seleccion[tipo] && (
-              <img
-                key={tipo}
-                src={productoSeleccionado[tipo].opciones.find(op => op.nombre === seleccion[tipo])?.imagen}
-                alt={tipo}
-                className="capa"
-              />
-            )
-          ))}
+        {/* Nuevo contenedor para la vista previa */}
+        <div className="producto-preview-container fixed-preview">
+          <div className="producto-preview"> {/* Clase para la vista previa */}
+            {Object.keys(seleccion).map((tipo) => (
+              seleccion[tipo] && (
+                <img
+                  key={tipo}
+                  src={productoSeleccionado[tipo].opciones.find(op => op.nombre === seleccion[tipo])?.imagen}
+                  alt={tipo}
+                  className="capa"
+                />
+              )
+            ))}
+          </div>
         </div>
 
-        <div className="personalizacion-capas">
+        <div className="personalizacion-capas"> {/* Botonera normal */}
           {Object.keys(productoSeleccionado).map((tipo) => (
             <div key={tipo}>
               <h5 className="tituloopciones">{productoSeleccionado[tipo].titulo}</h5>
@@ -92,7 +93,7 @@ const PersonalizarCartera = () => {
                     </button>
                     <span className="option-name">{opcion.nombre}</span>
                   </div>
-                ))}
+                ))} 
               </div>
             </div>
           ))}

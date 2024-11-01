@@ -4,15 +4,18 @@
   color: #000000;
   // box-shadow: 0 2px 80px rgba(255, 0, 0, 0.637);
   // border-radius: 20px;
-
   // background-color: transparent;
 
   .producto-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-      border-radius: 20px;
+    border-radius: 20px;
     overflow: hidden;
 
+
+    .producto-preview-container{
+    // background-color: red;
+ 
     .producto-preview {
       background-image: url(/img/10-personaliza-tu-cartera/deira-cartera-bombon/00-boceto-inicial-final-1.png);
       background-color: #ffffff2c;
@@ -28,8 +31,6 @@
       height: 600px; // Ajusta según sea necesario
       overflow: hidden; // Evita que las capas se salgan del contenedor
       transition: transform 0.3s ease;
-
-  
 
       img {
         position: absolute;
@@ -48,7 +49,7 @@
           z-index: 2;
         }
       }
-    }
+    }}
 
     .tituloopciones {
       margin: 15px;
@@ -59,7 +60,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-     
+  
 
       .options-container {
         display: flex; // Cambia la visualización a flex
@@ -88,7 +89,7 @@
 
           .option-img {
             width: 100%; // Ajusta el tamaño según sea necesario
-            height: 80px; // Ajusta el tamaño según sea necesario
+            height: 60px; // Ajusta el tamaño según sea necesario
           }
         }
       }
@@ -144,13 +145,11 @@
   }
 }
 
-
 .option-wrapper {
   display: flex;
   flex-direction: column; // Apila el botón y el nombre verticalmente
   align-items: center; // Centra el contenido
   padding: 0px;
-
 
   .option-name {
     margin-top: 5px; // Espaciado entre el botón y el nombre
