@@ -23,7 +23,7 @@ const Header = () => {
             id="basic-navbar-nav"
             className={`navbar-collapse ${isMobileMenuOpen ? "show" : ""}`}
           >
-            <Navbar.Brand as={Link} to="/" className="logo-container">
+            <Navbar.Brand as={Link} to="https://www.deira.com.ar/"    target="_blank" className="logo-container">
               <img
                 src="../../img/02-logos/logodeiracarteras.png"
                 alt="Logo"
@@ -33,9 +33,11 @@ const Header = () => {
 
             <Nav className="ml-auto navbar-nav">
               <Nav.Link
-                as={Link}
-                to="/"
+                as="a" // Cambiar a un enlace estándar
+                href="https://www.deira.com.ar/"
                 onClick={() => setIsMobileMenuOpen(false)}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 INICIO
               </Nav.Link>
@@ -47,7 +49,6 @@ const Header = () => {
               >
                 PERSONALIZA
               </Nav.Link>  */}
-
             </Nav>
 
             {/* <Nav.Item className="auth-buttons-container">

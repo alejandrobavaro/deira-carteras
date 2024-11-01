@@ -14,7 +14,7 @@ function Footer() {
       <div className="footer-grid">
         <div className="footer-content">
           <div className="footer-column">
-            <a href="#">
+            <a href="https://www.deira.com.ar/">
               <img
                 className="footer-logo"
                 src="../../img/02-logos/logodeiracarteras.png"
@@ -26,28 +26,28 @@ function Footer() {
           <div className="footer-column">
             <div className="social-links">
               <a
-                href="#"
+                href="https://www.deira.com.ar/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="bi bi-instagram" /> Instagram
               </a>
               <a
-                href="#"
+                href="https://www.deira.com.ar/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="bi bi-youtube" /> Youtube
               </a>
               <a
-                href="#"
+                href="https://www.deira.com.ar/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="bi bi-facebook" /> Facebook
               </a>
               <a
-                href="#"
+                href="https://www.deira.com.ar/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -57,7 +57,7 @@ function Footer() {
           </div>
 
           <div className="footer-column">
-            <a href="#">
+            <a href="https://www.deira.com.ar/">
               <img
                 className="footer-logo"
                src="../../img/02-logos/logodeiracarteras.png"
