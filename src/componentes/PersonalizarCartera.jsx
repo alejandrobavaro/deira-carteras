@@ -58,6 +58,21 @@ const PersonalizarCartera = () => {
     URL.revokeObjectURL(url);
   };
 
+  // Genera el mensaje de WhatsApp usando el contenido del diseño
+  const whatsappMessage = `
+      ¡Mira mi diseño de cartera! Aquí están los detalles:
+      Solapa: ${seleccion.solapa || 'N/A'}
+      Cuerpo: ${seleccion.cuerpo || 'N/A'}
+      Fuelle: ${seleccion.fuelle || 'N/A'}
+      Correa: ${seleccion.correa || 'N/A'}
+      Portamanijas: ${seleccion.portamanijas || 'N/A'}
+      Herrajes: ${seleccion.herrajes || 'N/A'}
+    `.trim();
+
+  // Codifica el mensaje para la URL
+  const encodedMessage = encodeURIComponent(whatsappMessage);
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=2235168797&text=${encodedMessage}`;
+
   return (
     <div className="personaliza-producto-container">
 
@@ -66,27 +81,22 @@ const PersonalizarCartera = () => {
       <div className="producto-grid-wrapper">
         <div className="producto-grid">
 
-        <div className="producto-preview-fixed-container">
-  <div className="producto-preview-container fixed-preview">
-    <div className="producto-preview">
-      {Object.keys(seleccion).map((tipo) => (
-        seleccion[tipo] && (
-          <img
-            key={tipo}
-            src={productoSeleccionado[tipo].opciones.find(op => op.nombre === seleccion[tipo])?.imagen}
-            alt={tipo}
-            className="capa"
-          />
-        )
-      ))}
-    </div>
-  </div>
-</div>
-
-
-          
-       
-
+          <div className="producto-preview-fixed-container">
+            <div className="producto-preview-container fixed-preview">
+              <div className="producto-preview">
+                {Object.keys(seleccion).map((tipo) => (
+                  seleccion[tipo] && (
+                    <img
+                      key={tipo}
+                      src={productoSeleccionado[tipo].opciones.find(op => op.nombre === seleccion[tipo])?.imagen}
+                      alt={tipo}
+                      className="capa"
+                    />
+                  )
+                ))}
+              </div>
+            </div>
+          </div>
 
           <div className="personalizacion-capas">
             {Object.keys(productoSeleccionado).map((tipo) => (
@@ -109,11 +119,18 @@ const PersonalizarCartera = () => {
             ))}
             <div className="personalizar-acciones">
               <button className="guardar-btn" onClick={handleSaveDesign}>Guardar Diseño</button>
-              <button className="guardar-btn">Compartir Diseño</button>
+              <a
+                href={whatsappUrl}
+                className="guardar-btn" // Usar el mismo estilo que el botón
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Compartir Diseño
+              </a>
             </div>
           </div>
-          </div>
-          </div>
+        </div>
+      </div>
     </div>
   );
 };

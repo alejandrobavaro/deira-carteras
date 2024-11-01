@@ -34,7 +34,7 @@
           border-radius: 30px;
           position: relative;
           margin: 0px;
-          margin-bottom: 10px;
+          margin-bottom: 0; // Eliminado margen inferior
           width: 100%;
           height: 600px;
           overflow: hidden;
@@ -63,6 +63,7 @@
       .tituloopciones {
         margin: 15px;
         font-size: medium;
+        margin-top: 0; // Eliminado margen superior si es necesario
       }
 
       .personalizacion-capas {
@@ -130,11 +131,12 @@
         .producto-preview {
           height: 400px; // Ajustar la altura en tabletas
           background-size: cover; // Cambiar a cover si es necesario
+          margin-bottom: 0; // Eliminado margen inferior
         }
       }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 401px) {
       padding: 5px;
 
       h1 {
@@ -143,10 +145,16 @@
 
       .producto-preview {
         height: 300px; // Ajustar la altura en móviles
+        margin-bottom: 0; // Eliminado margen inferior
+      }
+
+      .personalizacion-capas {
+        margin-top: -300px; // Reduce el margen superior de la sección de botones
       }
 
       .tituloopciones {
         font-size: medium; // Reducir el tamaño de la fuente
+        margin-top: 0; // Eliminado margen superior si es necesario
       }
     }
   }
