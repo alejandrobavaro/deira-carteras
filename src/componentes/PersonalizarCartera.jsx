@@ -60,50 +60,60 @@ const PersonalizarCartera = () => {
 
   return (
     <div className="personaliza-producto-container">
+
       <h1>Personaliza tu Cartera</h1>
-      <div className="producto-grid">
-        {/* Nuevo contenedor para la vista previa */}
-        <div className="producto-preview-container fixed-preview">
-          <div className="producto-preview"> {/* Clase para la vista previa */}
-            {Object.keys(seleccion).map((tipo) => (
-              seleccion[tipo] && (
-                <img
-                  key={tipo}
-                  src={productoSeleccionado[tipo].opciones.find(op => op.nombre === seleccion[tipo])?.imagen}
-                  alt={tipo}
-                  className="capa"
-                />
-              )
-            ))}
-          </div>
-        </div>
+      
+      <div className="producto-grid-wrapper">
+        <div className="producto-grid">
 
-        <div className="personalizacion-capas"> {/* Botonera normal */}
-          {Object.keys(productoSeleccionado).map((tipo) => (
-            <div key={tipo}>
-              <h5 className="tituloopciones">{productoSeleccionado[tipo].titulo}</h5>
-              <div className="options-container">
-                {productoSeleccionado[tipo].opciones.map((opcion) => (
-                  <div key={opcion.nombre} className="option-wrapper">
-                    <button 
-                      className={`option-button ${seleccion[tipo] === opcion.nombre ? 'selected' : ''}`}
-                      onClick={() => handleSeleccionChange(tipo, opcion.nombre)}
-                    >
-                      <img src={opcion.imagen} alt={opcion.nombre} className="option-img" />
-                    </button>
-                    <span className="option-name">{opcion.nombre}</span>
-                  </div>
-                ))} 
+        <div className="producto-preview-fixed-container">
+  <div className="producto-preview-container fixed-preview">
+    <div className="producto-preview">
+      {Object.keys(seleccion).map((tipo) => (
+        seleccion[tipo] && (
+          <img
+            key={tipo}
+            src={productoSeleccionado[tipo].opciones.find(op => op.nombre === seleccion[tipo])?.imagen}
+            alt={tipo}
+            className="capa"
+          />
+        )
+      ))}
+    </div>
+  </div>
+</div>
+
+
+          
+       
+
+
+          <div className="personalizacion-capas">
+            {Object.keys(productoSeleccionado).map((tipo) => (
+              <div key={tipo}>
+                <h5 className="tituloopciones">{productoSeleccionado[tipo].titulo}</h5>
+                <div className="options-container">
+                  {productoSeleccionado[tipo].opciones.map((opcion) => (
+                    <div key={opcion.nombre} className="option-wrapper">
+                      <button 
+                        className={`option-button ${seleccion[tipo] === opcion.nombre ? 'selected' : ''}`}
+                        onClick={() => handleSeleccionChange(tipo, opcion.nombre)}
+                      >
+                        <img src={opcion.imagen} alt={opcion.nombre} className="option-img" />
+                      </button>
+                      <span className="option-name">{opcion.nombre}</span>
+                    </div>
+                  ))} 
+                </div>
               </div>
+            ))}
+            <div className="personalizar-acciones">
+              <button className="guardar-btn" onClick={handleSaveDesign}>Guardar Diseño</button>
+              <button className="guardar-btn">Compartir Diseño</button>
             </div>
-          ))}
-
-          <div className="personalizar-acciones">
-            <button className="guardar-btn" onClick={handleSaveDesign}>Guardar Diseño</button>
-            <button className="guardar-btn">Compartir Diseño</button>
           </div>
-        </div>
-      </div>
+          </div>
+          </div>
     </div>
   );
 };
